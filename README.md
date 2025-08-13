@@ -1,6 +1,6 @@
-# Hello World CI/CD Pipeline
+# Simple Web App CI/CD Pipeline
 
-This project implements a full CI/CD pipeline for a "Hello World" web application using Google Cloud, Terraform, and GitHub.
+This project implements a full CI/CD pipeline for a simple, single-page web application using Google Cloud, Terraform, and GitHub.
 
 ## Overview
 
@@ -8,6 +8,8 @@ When code is pushed to the GitHub repository, a Google Cloud Build trigger is ac
 1.  Build the Docker image for the Python application.
 2.  Push the image to Google Artifact Registry.
 3.  Deploy the new image to the Google Cloud Run service.
+
+The application itself is a single `index.html` file served by a Python Flask backend.
 
 ## Prerequisites
 
