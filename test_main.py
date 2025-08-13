@@ -7,8 +7,8 @@ def client():
     with app.test_client() as client:
         yield client
 
-def test_hello_world(client):
-    """Test the hello world endpoint"""
+def test_serve_index(client):
+    """Test that the index.html file is served"""
     rv = client.get('/')
     assert rv.status_code == 200
-    assert b'Hello, World!' in rv.data
+    assert b'<title>My Awesome App</title>' in rv.data
