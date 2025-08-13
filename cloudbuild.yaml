@@ -29,3 +29,6 @@ steps:
 
 images:
   - 'us-central1-docker.pkg.dev/aqueous-nebula-426105-i3/demo-repo/hello-world-image:$COMMIT_SHA'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
